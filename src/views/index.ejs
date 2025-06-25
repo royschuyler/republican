@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>The Grand Republic Gazette</title>
-  <link rel="stylesheet" href="/css/newspaper.css">
-</head>
-<body>
-  <%- include('partials/header') %>
-  <%- include('partials/nav') %>
-
 <div class="container">
   <div class="row">
-    <% articles.forEach(function(article) { %>
+    <% articles.forEach(article => { %>
       <div class="col-md-6 mb-4 article">
         <h2><%= article.title %></h2>
         <p class="article-body"><%= article.body %></p>
         <button class="read-more-btn">Read More</button>
       </div>
-    <% }); %>
+    <% }) %>
   </div>
 </div>
-
-<script src="/js/script.js"></script>
-<%- include('partials/footer') %>
-</body>
-</html>

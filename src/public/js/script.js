@@ -1,14 +1,13 @@
-// toggles article expansion/collapse
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.read-more-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var body = this.previousElementSibling;
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.previousElementSibling;
       if (body.classList.contains('expanded')) {
         body.classList.remove('expanded');
-        this.textContent = 'Read More';
+        btn.textContent = 'Read More';
       } else {
         body.classList.add('expanded');
-        this.textContent = 'Collapse';
+        btn.textContent = 'Collapse';
       }
     });
   });

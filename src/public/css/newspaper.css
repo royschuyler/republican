@@ -163,5 +163,11 @@ header, nav, footer {
   text-decoration: underline;
 }
 
-.article-body { max-height: 100px; overflow: hidden; transition: max-height 0.3s ease; }
-.article-body.expanded { max-height: 1000px; }
+.article-body {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.article-body.expanded {
+  max-height: 1000px;
+}

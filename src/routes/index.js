@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     { title: 'First Article',  body: 'This is the first article.'  },
     { title: 'Second Article', body: 'This is the second article.' }
   ];
-  res.render('index', { articles });
+  res.render('index', { title: 'Home', articles });
 });
 
 module.exports = router;
