@@ -162,3 +162,6 @@ header, nav, footer {
 .read-more-btn:hover {
   text-decoration: underline;
 }
+
+.article-body { max-height: 100px; overflow: hidden; transition: max-height 0.3s ease; }
+.article-body.expanded { max-height: 1000px; }

@@ -1,16 +1,15 @@
+// src/routes/index.js
 const express = require('express');
-const router = express.Router();
+const router  = express.Router();
 
+// This file should live at src/routes/index.js
+// It handles the home page and renders index.ejs with articles
 router.get('/', (req, res) => {
-  // Dummy article data—later you can pull from a JSON file or database
-const articles = [
-  {
-    headline: "The Eagle Soars on Capitol Hill",
-    preview:  "In a resounding display of unity, bi-partisan lawmakers gathered beneath the marble dome…",
-    more:     "In front of a packed gallery, the chamber echoed with pledges of fiscal responsibility…"
-  }
-  // , add more articles here if you want
-];
+  // TODO: Replace with real data fetching
+  const articles = [
+    { title: 'First Article',  body: 'This is the first article.'  },
+    { title: 'Second Article', body: 'This is the second article.' }
+  ];
   res.render('index', { articles });
 });
 
