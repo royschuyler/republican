@@ -1,0 +1,164 @@
+body {
+  font-family: 'Times New Roman', serif;
+  margin: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.article-headline {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.article-body {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/***** Masthead ****/
+.masthead {
+  background-color: #990000;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 4px solid #660000;
+  text-align: center;
+}
+.masthead-logo {
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.masthead-title {
+  display: inline-block;
+  font-family: 'Times New Roman', serif;
+  font-size: 3rem;
+  margin: 0;
+}
+.masthead-tagline {
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin: 0.2rem 0 0;
+}
+
+/**** NAV ****/
+.main-nav {
+  background: linear-gradient(to right, #b30000, #e60000, #b30000);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.main-nav li {
+  margin: 0 1rem;
+}
+.main-nav a {
+  color: white;
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/**** Footer *****/
+.site-footer {
+  background-color: #660000;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: Georgia, serif;
+  margin-top: 2rem;
+}
+.site-footer em {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Articles container only */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.articles {
+  column-count: 3;      /* ← newspaper columns live here now */
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Article styles */
+.article-headline {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: #330000;
+  break-inside: avoid;
+}
+.article-body {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+header, nav, footer {
+  /* In Firefox: */
+  column-span: all;
+  /* In Webkit (Chrome/Safari): */
+  -webkit-column-span: all;
+}
+
+/* ----- Headline style ----- */
+.special-headline {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #660000;
+  border-bottom: 2px solid #990000;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ----- Drop cap ----- */
+.dropcap {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-right: 0.3rem;
+  font-family: Georgia, serif;
+  color: #990000;
+}
+
+/* ----- Initially hide the extra text ----- */
+.more-text {
+  display: none;
+}
+
+/* ----- Read-more button ----- */
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #990000;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+.read-more-btn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Grand Republic Gazette</title>
+  <link rel="stylesheet" href="/css/newspaper.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <%- include('partials/nav') %>
+
+<main class="container articles">
+  <% articles.forEach(article => { %>
+    <article class="article-preview">
+      <h2 class="article-headline special-headline">
+        <%= article.headline %>
+      </h2>
+      <p class="article-body">
+        <!-- dropcap on first letter of preview -->
+        <span class="dropcap"><%= article.preview.charAt(0) %></span>
+        <%= article.preview.slice(1) %>
+        <span class="more-text"><%= article.more %></span>
+      </p>
+      <button class="read-more-btn">Read More ↓</button>
+    </article>
+  <% }) %>
+</main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
