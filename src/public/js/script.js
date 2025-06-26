@@ -1,3 +1,5 @@
+/* public/js/script.js */
+// ensure this script is included in layout before closing </body>
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.read-more-btn').forEach(btn => {
     btn.addEventListener('click', () => {

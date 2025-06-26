@@ -171,3 +171,161 @@ header, nav, footer {
 .article-body.expanded {
   max-height: 1000px;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+}
+.main-nav .nav-left,
+.main-nav .nav-center,
+.main-nav .nav-right {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.main-nav .nav-left {
+  margin-right: auto;
+}
+.main-nav .nav-center {
+  flex: 1;
+  justify-content: center;
+}
+.main-nav li {
+  margin: 0 1rem;
+}
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.masthead-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.masthead-right a {
+  display: block;
+  text-align: right;
+  margin-bottom: 0.25rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-body {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.article-body.expanded {
+  max-height: 1000px;
+}
+
+/* public/css/newspaper.css */
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article {
+  /* full width on mobile, half-width (minus gap) on tablet+ */
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+@media(min-width: 768px) {
+  .article {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+.article {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease;
+}
+.article:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.article-body {
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.article-body.expanded {
+  max-height: none; /* allow full height */
+}
+
+.article-body::first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 1;
+  margin-right: 0.1em;
+  font-weight: bold;
+}
+
+/* constrain the width to 80% and center it,
+   with some vertical breathing room */
+.main-content {
+  max-width: 80%;
+  margin: 2rem auto;    /* 2rem top/bottom, auto left/right */
+}
+
+/* push the nav away from the articles */
+.main-nav {
+  margin-bottom: 2rem;
+}
+
+.article {
+  margin-bottom: 2rem;  /* space between stacked items on mobile */
+}
+
+/* 1) Center the date under the title */
+.article small {
+  display: block;
+  text-align: center;
+  margin: 0.5rem 0;  /* give it a little breathing room above & below */
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 2) Bigger title + new font */
+.article h2 {
+  font-family: 'Georgia', serif;  /* or whatever you like */
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* 3) Extra margin between text and border */
+.article {
+  padding: 1.5rem;    /* up from 1rem */
+  background-color: #fafafa;  /* 4) very slight background tint */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 2rem; /* space to next article */
+}
+
+/* 4) (already set) drop cap, collapse/expand */
+.article-body {
+  margin: 1rem 0;      /* ensures body text doesn’t hug the border */
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.article-body.expanded {
+  max-height: none;
+}
+
+/* Optional: tweak hover shadow for contrast */
+.article:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+

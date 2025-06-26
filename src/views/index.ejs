@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="row">
-    <% articles.forEach(article => { %>
-      <div class="col-md-6 mb-4 article">
-        <h2><%= article.title %></h2>
-        <p class="article-body"><%= article.body %></p>
-        <button class="read-more-btn">Read More</button>
-      </div>
-    <% }) %>
-  </div>
+<% /* render two-column, square-like article cards */ %>
+<div class="articles-container">
+  <% articles.forEach(article => { %>
+    <article class="article">
+      <h2><%= article.title %></h2>
+      <small class="article-date text-muted" ><%= article.date %></small>
+      <p class="article-body"><%= article.body %></p>
+      <button class="read-more-btn">Read More</button>
+    </article>
+  <% }) %>
 </div>
