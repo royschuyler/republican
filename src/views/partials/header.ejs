@@ -4,35 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <title><%= title %></title>
-  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <script defer src="/js/theme-toggle.js"></script>
   <script defer src="/js/mobile-menu.js"></script>
 </head>
 <body class="<%= theme %>">
   <header class="site-header">
     <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="/">
-          <img src="/images/logo.svg" alt="Logo" />
-        </a>
+      <!-- Masthead -->
+      <div class="masthead">
+        <h1>The Christian Republican</h1>
       </div>
 
       <!-- Navigation -->
-      <nav class="nav">
-        <ul>
-          <% ['Home','Politics','Opinion','Business','Lifestyle','Sports','Multimedia'].forEach(function(item) { %>
-            <li><a href="/<%= item.toLowerCase() %>"><%= item %></a></li>
-          <% }); %>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- Actions -->
-      <div class="actions">
-        <button id="search-btn" aria-label="Search">🔍</button>
-        <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
-        <button id="mobile-menu-btn" aria-label="Menu">☰</button>
-      </div>
     </div>
   </header>
 
