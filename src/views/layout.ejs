@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= title %></title>
-  <link rel="stylesheet" href="/css/newspaper.css">
+  <!-- Header styles -->
+  <link rel="stylesheet" href="/css/header.css" />
+
+  <!-- Newspaper styles (all your masthead/nav/article/footer rules) -->
+  <link rel="stylesheet" href="/css/newspaper.css" />
+  <!-- Icons/Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <!-- Theme & Menu Scripts -->
+  <script defer src="/js/theme-toggle.js"></script>
+  <script defer src="/js/mobile-menu.js"></script>
 </head>
-<body>
+<body class="<%= theme %>">
+  <!-- Header (includes logo, nav, actions) -->
   <%- include('partials/header') %>
-  <%- include('partials/nav') %>
+
+  <!-- Main Content -->
   <main class="main-content">
     <%- body %>
   </main>
-<%- include('partials/footer') %>
-<script src="/js/script.js"></script>
+
+  <!-- Footer -->
+  <%- include('partials/footer') %>
+  <script src="/js/script.js"></script>
 </body>
 </html>

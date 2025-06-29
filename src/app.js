@@ -1,4 +1,6 @@
+// app.js
 const express        = require('express');
+const cookieParser   = require('cookie-parser');
 const expressLayouts = require('express-ejs-layouts');
 const path           = require('path');
 const indexRouter    = require('./routes/index');
@@ -7,24 +9,33 @@ const contactRouter  = require('./routes/contact');
 
 const app = express();
 
-// 1️⃣ enable layouts
-app.use(expressLayouts);
-// 2️⃣ tell it your default layout file is views/layout.ejs
-app.set('layout', 'layout');
+// ─── 1️⃣ Parse cookies so we can read theme preference ───────────────────────
+app.use(cookieParser());
 
-// 3️⃣ now set up EJS
+// ─── 2️⃣ Enable express-ejs-layouts ───────────────────────────────────────────
+app.use(expressLayouts);
+app.set('layout', 'layout'); // default layout file: views/layout.ejs
+
+// ─── 3️⃣ Configure EJS ────────────────────────────────────────────────────────
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// 4️⃣ static assets
+// ─── 4️⃣ Expose `theme` to all templates ──────────────────────────────────────
+//    This makes `<%= theme %>` available in layout.ejs
+app.use((req, res, next) => {
+  res.locals.theme = req.cookies.theme || 'light';
+  next();
+});
+
+// ─── 5️⃣ Serve static assets ──────────────────────────────────────────────────
 app.use(express.static(path.join(__dirname, 'public')));
 
-// 5️⃣ routes
+// ─── 6️⃣ Mount your routes ───────────────────────────────────────────────────
 app.use('/',      indexRouter);
 app.use('/about',   aboutRouter);
 app.use('/contact', contactRouter);
 
-// 6️⃣ start the server
+// ─── 7️⃣ Start the server ────────────────────────────────────────────────────
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
 

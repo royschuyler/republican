@@ -328,4 +328,61 @@ header, nav, footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
+/* header.css */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo img {
+  height: 40px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+.actions button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 12px;
+}
 
+/* Theme variables */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --border: #e0e0e0;
+}
+body.dark {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --border: #333333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .actions { display: flex; }
+}
