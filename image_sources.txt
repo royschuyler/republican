@@ -1,0 +1,61 @@
+1) Federal
+a) White House Flickr – https://www.flickr.com/photos/whitehouse
+b) Library of Congress Prints & Photographs – https://www.loc.gov/pictures
+c) NASA Image and Video Library – https://images.nasa.gov
+d) Smithsonian Open Access – https://www.si.edu/OpenAccess
+e) National Archives Still Pictures – https://www.archives.gov/research/search#media=still%20pictures
+f) USGS Photo Library – https://www.usgs.gov/products/photos
+g) Fish & Wildlife Service National Digital Library – https://digitalmedia.fws.gov/
+h) USDA National Agricultural Library Collections – https://www.nal.usda.gov/collections
+
+2) State
+(AL) Alabama Digital Archives – https://digital.archives.alabama.gov/
+(AK) Alaska Digital Archives (ViLDA) – https://vilda.alaska.edu/
+(AZ) Arizona Memory Project – https://azmemory.azlibrary.gov/
+(AR) Arkansas State Archives Digital Collections – https://arkansasstatearchives.org/online-exhibits
+(CA) Calisphere (CA digital library) – https://calisphere.org/
+(CO) Colorado Virtual Library Digital Collections – https://coloradovirtuallibrary.org/digital-collections/
+(CT) Connecticut Digital Collections – https://digitalcollections.ctstatelibrary.org/
+(DE) Delaware Public Archives Digital Collections – https://archivesfiles.delaware.gov/
+(FL) Florida Memory – https://www.floridamemory.com/
+(GA) Digital Library of Georgia – https://dlg.usg.edu/
+(HI) Hawaii State Archives Digital Collections – https://ags.hawaii.gov/archives/digital-collections/
+(ID) Idaho Digital Library – https://lili.org/digitalcollections
+(IL) Illinois Digital Archives – https://collections.carli.illinois.edu/
+(IN) Indiana Memory – https://digitalindy.org/
+(IA) Iowa Digital Library – https://iowaculture.gov/history/collections
+(KS) Kansas Digital Collections – https://kslib.info/231/Digital-Collections
+(KY) Kentucky Digital Library – https://kdl.kyvl.org/
+(LA) Louisiana Digital Library – https://louisianadigitallibrary.org/
+(ME) Maine State Archives Digital Collections – https://www.maine.gov/sos/arc/archives/digital-collections.shtml
+(MD) Digital Maryland – https://digitalmaryland.org/
+(MA) Digital Commonwealth (MA collections) – https://www.digitalcommonwealth.org/
+(MI) Clarke Historical Library Digital Collections – https://aadl.org/bitstream
+(MN) Minnesota Digital Library – https://mn.e-museum.com/home
+(MS) Mississippi Department of Archives & History – https://da.mdah.ms.gov/
+(MO) Missouri Digital Heritage – https://collections.shsmo.org/
+(MT) Montana Memory Project – https://mtmemory.org/
+(NE) Nebraska Memories – https://history.nebraska.gov/collections/nebraska-memories
+(NV) Nevada Historical Society Digital Collections – https://nvculture.org/historical/
+(NH) New Hampshire Digital Collections – https://www.nhhistory.org/
+(NJ) New Jersey Digital Collections – https://www.jerseyhistory.org/
+(NM) New Mexico State Library Digital Collections – https://nmstatehood.unm.edu/
+(NY) NYS Archives Digital Collections – https://digitalcollections.archives.nysed.gov/
+(NC) North Carolina Digital Collections – https://cdm16062.contentdm.oclc.org/
+(ND) State Historical Society of North Dakota – https://historical.nd.gov/digital-archives
+(OH) Ohio History Connection Digital Collections – https://digital-collections.ohiohistory.org/
+(OK) Gateway to Oklahoma History – https://gateway.okhistory.org/
+(OR) Oregon Digital – https://oregondigital.org/
+(PA) Pennsylvania State Archives Digital – https://www.phmc.pa.gov/Archives/Pages/Digital-Collections.aspx
+(RI) Rhode Island Digital Archives – https://sos.ri.gov/programs-services/archives-digital
+(SC) South Carolina Digital Library – https://schistory.org/
+(SD) South Dakota State Archives – https://gfp.sd.gov/historic.aspx
+(TN) Tennessee Virtual Archive – https://teva.contentdm.oclc.org/
+(TX) The Portal to Texas History – https://texashistory.unt.edu/
+(UT) Utah Digital Newspapers & Collections – https://utahdpanther.org/
+(VT) Vermont History Explorer – https://vermonthistory.org/explorer
+(VA) Virginia Memory – https://www.lva.virginia.gov/
+(WA) Washington State Digital Archives – https://www.digitalarchives.wa.gov/
+(WV) West Virginia Division of Culture and History Digital – https://wvhistoryonview.org/
+(WI) Wisconsin Historical Images – https://digicoll.library.wisc.edu/
+(WY) Wyoming Tales & Trails – https://www.wyomingtalesandtrails.com/

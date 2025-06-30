@@ -1,6 +1,26 @@
+<% /* views/article.ejs */ %>
 <article class="article-page">
   <h1><%= article.title %></h1>
   <p class="article-date"><%= article.date %></p>
+
+  <% if (article.image) { %>
+    <figure class="article-image">
+      <img
+        src="<%= article.image %>"
+        srcset="
+          <%= article.image %>   800w,
+          <%= article.image.replace(/(\.[a-zA-Z]+)$/, '@2x$1') %> 1600w
+        "
+        sizes="(max-width: 800px) 100vw, 800px"
+        alt="<%= article.title %> — featured image"
+        loading="lazy"
+      >
+      <% if (article.caption) { %>
+        <figcaption><%= article.caption %></figcaption>
+      <% } %>
+    </figure>
+  <% } %>
+
   <div class="article-body">
     <p><%= article.body %></p>
   </div>

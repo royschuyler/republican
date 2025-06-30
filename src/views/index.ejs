@@ -1,10 +1,29 @@
 <% /* Two-column layout */ %>
 <div class="articles-container">
   <% const split = Math.ceil(articles.length / 2); %>
+
   <div class="column-left">
     <% articles.slice(0, split).forEach((article, i) => { %>
       <div class="article-card" data-index="<%= i %>">
+
+        <!-- Featured image (if provided in JSON) -->
+        <% if (article.image) { %>
+          <figure class="card-image">
+            <img
+              src="<%= article.image %>"
+              alt="Featured: <%= article.title %>"
+              loading="lazy"
+            >
+            <% if (article.caption) { %>
+              <figcaption><%= article.caption %></figcaption>
+            <% } %>
+          </figure>
+        <% } %>
+
+        <!-- Title -->
         <h2><a href="/article/<%= i %>"><%= article.title %></a></h2>
+
+        <!-- Excerpt / expandable body -->
         <div class="excerpt">
           <p><%= article.body.substring(0, 200) %>…</p>
         </div>
@@ -15,10 +34,29 @@
       </div>
     <% }) %>
   </div>
+
   <div class="column-right">
     <% articles.slice(split).forEach((article, idx) => { %>
       <div class="article-card" data-index="<%= idx + split %>">
+
+        <!-- Featured image -->
+        <% if (article.image) { %>
+          <figure class="card-image">
+            <img
+              src="<%= article.image %>"
+              alt="Featured: <%= article.title %>"
+              loading="lazy"
+            >
+            <% if (article.caption) { %>
+              <figcaption><%= article.caption %></figcaption>
+            <% } %>
+          </figure>
+        <% } %>
+
+        <!-- Title -->
         <h2><a href="/article/<%= idx + split %>"><%= article.title %></a></h2>
+
+        <!-- Excerpt / expandable body -->
         <div class="excerpt">
           <p><%= article.body.substring(0, 200) %>…</p>
         </div>

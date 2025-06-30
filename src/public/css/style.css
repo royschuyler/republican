@@ -325,3 +325,37 @@ header.site-header {
 header.site-header h1 {
   margin: 0;
 }
+
+/* -----------------------------------------------------------------------------
+   Home-page card images (between title & excerpt)
+   ----------------------------------------------------------------------------- */
+.card-image {
+  margin: 1rem 0;
+  text-align: center;
+}
+.card-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------------------------------------------------------
+   Make the card image span 100% of its column
+   ----------------------------------------------------------------------------- */
+.card-image,
+.article-image {
+  width: 100%;               /* ensure the figure wrapper fills the container */
+  margin: 1rem 0;            /* keep your vertical spacing */
+}
+
+.card-image img,
+.article-image img {
+  display: block;
+  width: 100%;               /* force the image to stretch to wrapper width */
+  height: auto;              /* maintain aspect ratio */
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: none;           /* override any earlier max-width rules */
+}
